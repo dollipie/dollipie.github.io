@@ -27,6 +27,60 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+
+
+	<style>
+		* {box-sizing: border-box;}
+		body {font-family: Verdana, sans-serif;}
+		.mySlides {display: none;}
+		img {vertical-align: middle;}
+		
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+		
+		.active {
+		  background-color: #717171;
+		}
+		
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+	</style>
+
 </head>
 
 <body>
@@ -102,8 +156,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+			  <img src="pic1.jpeg" style="width:100%">
+			  <div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="pic2.jpeg" style="width:100%">
+			  <div class="text">Caption Two</div>
+			</div>
+		</div>
 		<div class="row message">
-			<div class="col-md-12" style="background-image: url('pic1.jpeg');">
+			<div class="col-md-12">
 				<p>Today is...</p>
 				<p>as beautiful as other days</p>
 				<p>but you realize</p>
