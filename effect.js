@@ -170,46 +170,46 @@ $('document').ready(function(){
 			$('.message').fadeIn('slow');
 		});
 		
-		var i;
+		// var i;
 
-		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
-			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==4){
-				$("p:nth-child(3)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
+		// function msgLoop (i) {
+		// 	$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+		// 	i=i+1;
+		// 	$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+		// 	if(i==4){
+		// 		$("p:nth-child(3)").fadeOut('slow').promise().done(function () {
+		// 			$('.cake').fadeIn('fast');
+		// 		});
 				
-			}
-			else{
-				msgLoop(i);
-			}			
+		// 	}
+		// 	else{
+		// 		msgLoop(i);
+		// 	}			
 
-		});
-			// body...
-		}
+		// });
+		// 	// body...
+		// }
 
-		var i;
+		var j;
 
-		function picLoop (i) {
-			$("img:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
-			i=i+1;
-			$("img:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==4){
+		function picLoop (j) {
+			$("img:nth-child("+j+")").fadeOut('slow').delay(800).promise().done(function(){
+			j=j+1;
+			$("img:nth-child("+j+")").fadeIn('slow').delay(1000);
+			if(j==4){
 				$("img:nth-child(3)").fadeOut('slow').promise().done(function () {
 					
 				});
 			}
 			else{
-				msgLoop(i);
+				picLoop(i);
 			}			
 
 		});
 			// body...
 		}
 		
-		msgLoop(0);
+		//msgLoop(0);
 		picLoop(0);
 		
 	});
