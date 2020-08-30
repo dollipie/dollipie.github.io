@@ -198,7 +198,7 @@ $('document').ready(function(){
 			$("img:nth-child("+j+")").fadeIn('slow').delay(1000);
 			if(j==6){
 				$("img:nth-child(5)").fadeOut('slow').promise().done(function () {
-					
+					$('.cake').fadeIn('fast');
 				});
 			}
 			else{
