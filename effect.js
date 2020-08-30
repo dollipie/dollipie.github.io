@@ -189,8 +189,28 @@ $('document').ready(function(){
 		});
 			// body...
 		}
+
+		var i;
+
+		function picLoop (i) {
+			$("img:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			i=i+1;
+			$("img:nth-child("+i+")").fadeIn('slow').delay(1000);
+			if(i==4){
+				$("img:nth-child(3)").fadeOut('slow').promise().done(function () {
+					
+				});
+			}
+			else{
+				msgLoop(i);
+			}			
+
+		});
+			// body...
+		}
 		
 		msgLoop(0);
+		picLoop(0);
 		
 	});
 });
