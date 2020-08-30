@@ -196,8 +196,8 @@ $('document').ready(function(){
 			$("img:nth-child("+j+")").fadeOut('slow').delay(800).promise().done(function(){
 			j=j+1;
 			$("img:nth-child("+j+")").fadeIn('slow').delay(1000);
-			if(j==4){
-				$("img:nth-child(3)").fadeOut('slow').promise().done(function () {
+			if(j==6){
+				$("img:nth-child(5)").fadeOut('slow').promise().done(function () {
 					
 				});
 			}
@@ -210,7 +210,7 @@ $('document').ready(function(){
 		}
 		
 		//msgLoop(0);
-		picLoop(0);
+		picLoop(2);
 		
 	});
 });
