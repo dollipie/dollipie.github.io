@@ -202,7 +202,7 @@ $('document').ready(function(){
 				});
 			}
 			else{
-				picLoop(i);
+				picLoop(j);
 			}			
 
 		});
