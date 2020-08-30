@@ -258,8 +258,7 @@
 */
 
 h1,
-p,
-img{
+p{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style:italic;
@@ -269,4 +268,12 @@ img{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+[data-component="slideshow"].slide {
+  display: none;
+}
+
+[data-component="slideshow"].slide.active {
+  display: block;
 }
